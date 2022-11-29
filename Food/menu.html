@@ -1,0 +1,102 @@
+<html>
+
+<head>
+  <title>GiveMeFood</title>
+  <link rel="stylesheet" type="text/css" href="menu.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap-grid.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Century Gothic">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa">
+
+
+  <script>
+    var total = 0;
+    function func(val) {
+      total += val;
+      update();
+    }
+
+    function update() {
+      var ttlvat = total + total * 0.05;
+      document.getElementById('ttl').innerHTML = total;
+      document.getElementById("ttlvat").innerHTML = ttlvat;
+    }
+
+  </script>
+
+</head>
+
+<body>
+  <div class="navbar">
+
+    <ul>
+      <li>
+        <a href="home.html">Home</a>
+      </li>
+      <li>
+        <a href="#">Log In</a>
+      </li>
+      <li>
+        <a href="#about">About</a>
+      </li>
+
+
+    </ul>
+
+  </div>
+
+  <div class="one image_responsive">
+
+    <div class="text">
+      <h1>Desilicious</h1>
+      <p>Find The Best Food Here</p>
+
+    </div>
+  </div>
+
+
+  <div class="menu">
+
+    <h4>Chicken Burger</h4>
+    <p><a href="#" onclick="func(260)">
+        BDT 260</a>
+  </div>
+
+  <div class="menu">
+
+    <h4>Chicken Burger</h4>
+    <p><a href="#" onclick="func(260)">
+        BDT 260</a>
+  </div>
+
+  <div class="menu">
+
+    <h4>Chicken Burger</h4>
+    <p><a href="#" onclick="func(360)">
+        BDT 360</a>
+  </div>
+
+  <div class="menu">
+
+    <h4>Chicken Burger</h4>
+    <p><a href="#" onclick="func(380)">
+        BDT 380</a>
+  </div>
+
+  <div class="order">
+
+    <h4>Your Order</h4>
+    <h5>SubTotal</h5>
+    <p id="ttl">0</p>
+    <h6>Total(include vat 5%)</h6>
+    <p id="ttlvat">0</p>
+
+    <a href="checkout.html">Checkout</a>
+  </div>
+
+
+
+
+
+</body>
+
+</html>
